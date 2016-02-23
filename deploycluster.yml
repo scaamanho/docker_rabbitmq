@@ -1,0 +1,12 @@
+rabbitmq-master:
+  image: scaamanho/rabbitmq
+  ports:
+    - 5672:5672
+    - 15672:15672
+
+rabbitmq-slave:
+  image: scaamanho/rabbitmq
+  environment:
+    - CLUSTER_WITH=rabbitmq-master-1
+  links:
+    - rabbitmq-master
