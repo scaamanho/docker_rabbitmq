@@ -91,7 +91,7 @@ rabbitmq-slave:
   environment:
     - CLUSTER_WITH=rabbitmq-master-1
   links:
-    - rabbitmq-master
-    
-[![](https://images.microbadger.com/badges/image/scaamanho/rabbitmq.svg)](https://microbadger.com/images/scaamanho/rabbitmq "Get your own image badge on microbadger.com")    
+    - rabbitmq-master 
 ```
+
+[![](https://images.microbadger.com/badges/image/scaamanho/rabbitmq.svg)](https://microbadger.com/images/scaamanho/rabbitmq "Get your own image badge on microbadger.com")   
